@@ -1,7 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import tables from './reducers';
+import Casino from './components/Casino';
+
+const store = createStore(tables);
 
 ReactDOM.render(
-    <div>initial</div>,
+    <Provider store={store}>
+        <Casino/>
+    </Provider>,
     document.getElementById('root')
 );
