@@ -4,8 +4,9 @@ import Tables from '../components/Tables';
 import { updateTables } from '../actions';
 
 const mapStateToProps = (state) => {
+    let newTables = state.tables.slice();
     return {
-        tables: state.tables,
+        tables: newTables,
     };
 };
 
