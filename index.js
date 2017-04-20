@@ -6,6 +6,7 @@ import tables from './reducers';
 import Casino from './components/Casino';
 
 console.log('test');
+console.log('test2');
 
 const store = createStore(tables);
 ReactDOM.render(
