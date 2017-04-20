@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import tables from './reducers';
 import Casino from './components/Casino';
 
+console.log('test');
+
 const store = createStore(tables);
 ReactDOM.render(
     <Provider store={store}>
