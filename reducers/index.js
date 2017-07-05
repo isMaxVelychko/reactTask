@@ -48,9 +48,8 @@ let initialState = {
 };
 
 let getNewState = (state) => {
-    let newState = Object.assign({}, state);
-
-    newState.tables.forEach(table => {
+    let tables = state.tables;
+    tables.forEach(table => {
         table.participants.forEach(item => {
             let randomValue = Math.random();
             if(randomValue >= 0.5) {
@@ -59,7 +58,9 @@ let getNewState = (state) => {
         });
     });
 
-    return newState;
+    return Object.assign({}, state, {
+        tables
+    });
 };
 
 const tables = (state = initialState, action) => {

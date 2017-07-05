@@ -9,7 +9,7 @@ class Tables extends React.Component {
     componentDidMount() {
         this.timerID = setInterval(
             () => this.props.updateTables(),
-            2000,
+            500,
         );
     }
 
