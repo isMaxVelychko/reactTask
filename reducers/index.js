@@ -1,51 +1,3 @@
-let initialState = {
-    tables: [
-        {
-            name: 'Foo table',
-            participants: [
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-            ],
-        },
-        {
-            name: 'Bar table',
-            participants: [
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-            ],
-        },
-        {
-            name: 'Baz table',
-            participants: [
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-            ],
-        },
-        {
-            name: 'Qux table',
-            participants: [
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-                {active: false},
-            ],
-        },
-    ],
-};
 
 let getNewState = (state) => {
     let tables = state.tables;
@@ -63,10 +15,18 @@ let getNewState = (state) => {
     });
 };
 
-const tables = (state = initialState, action) => {
+const tables = (state = {tables: []}, action) => {
     switch (action.type) {
         case 'UPDATE_TABLES':
             return getNewState(state);
+        case 'REQUEST_DATA':
+            return state;
+        case 'RECEIVE_DATA':
+            return Object.assign({}, state, {
+                tables: action.data.tables,
+            });
+        case 'FETCH_DATA':
+            return state;
         default:
             return state
     }

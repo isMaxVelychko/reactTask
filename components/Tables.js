@@ -7,10 +7,13 @@ class Tables extends React.Component {
     };
 
     componentDidMount() {
-        this.timerID = setInterval(
+        this.props.fetchData();
+
+
+        /*this.timerID = setInterval(
             () => this.props.updateTables(),
             500,
-        );
+        );*/
     }
 
     componentWillUnmount() {

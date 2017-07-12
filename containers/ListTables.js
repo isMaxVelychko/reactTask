@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Tables from '../components/Tables';
-import { updateTables } from '../actions';
+import { updateTables, fetchData } from '../actions';
 
 const mapStateToProps = (state) => {
     let newTables = state.tables.slice();
@@ -15,6 +15,9 @@ const mapDispatchToProps = (dispatch) => {
         updateTables: () => {
             dispatch(updateTables());
         },
+        fetchData: () => {
+            dispatch(fetchData());
+        }
     };
 };
 
