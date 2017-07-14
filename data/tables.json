@@ -1,0 +1,114 @@
+{
+  "tables": [
+    {
+      "name": "1 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "2 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "3 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "4 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "5 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "6 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "7 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "8 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "9 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    },
+    {
+      "name": "10 table",
+      "participants": [
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false},
+        {"active": false}
+      ]
+    }
+  ]
+}
