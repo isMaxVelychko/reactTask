@@ -6,8 +6,7 @@ export const updateTables = () => ({
 });
 
 export const receiveData = (data) => ({
-    type: 'RECEIVE_DATA',
-    data,
+    type: 'RECEIVE_DATA', data,
 });
 
 export const fetchData = () => {

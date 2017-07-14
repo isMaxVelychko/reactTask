@@ -1,22 +1,19 @@
 
 const initialState = {
-    tables: []
+    tables: [],
 };
 
-let getNewState = (state) => {
-    let tables = state.tables;
+let update = (state) => {
+    const tables = state.tables;
     tables.forEach(table => {
         table.participants.forEach(item => {
-            let randomValue = Math.random();
-            if(randomValue >= 0.5) {
+            if(Math.random() >= 0.5) {
                 item.active = !item.active;
             }
         });
     });
 
-    return Object.assign({}, state, {
-        tables
-    });
+    return Object.assign({}, state, {tables});
 };
 
 const tables = (state = initialState, action) => {
@@ -26,11 +23,16 @@ const tables = (state = initialState, action) => {
         case 'RECEIVE_DATA':
             return Object.assign({}, state, {
                 tables: action.data.tables,
+                loaded: true,
             });
         case 'UPDATE_TABLES':
-            return getNewState(state);
+            if (state.loaded) {
+                return update(state);
+            } else {
+                return state;
+            }
         default:
-            return state
+            return state;
     }
 };
 
